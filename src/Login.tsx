@@ -48,7 +48,7 @@ function Login() {
             login(username, data.accessToken);
             setUsername("");
             setPassword("");
-            navigate('/chat');
+            navigate('/profile');
         }
     }
 
