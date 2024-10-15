@@ -53,20 +53,20 @@ function Login() {
     }
 
     return (
-        <main className="h-screen w-screen bg-gray-800 flex flex-col justify-center">
+        <main className="h-screen w-screen bg-[#111111]  flex flex-col justify-center">
             {notifMsg !== "" && notifType !== "" ? <Notificaiton type={notifType} message={notifMsg}></Notificaiton> : null}
-            <div className="bg-blue-900 w-[600px] p-5 rounded-lg mx-auto shadow-md">
-                <h1 className="mx-auto text-3xl font-bold text-white w-[90%] text-center mt-2">Login</h1>
+            <div className="bg-[#33B272] w-[600px] p-5 mx-auto shadow-md">
+                <h1 className="mx-auto text-3xl font-extrabold text-[#1A3A2A] w-[90%] text-center mt-2">Login</h1>
                 <form onSubmit={(e: FormEvent) => { handleLogin(e) }} className="flex flex-col mx-auto w-[90%] gap-4">
                     <div className="flex flex-col gap-1">
-                        <label htmlFor="username" className="text-white font-bold">Username</label>
-                        <input id="username" type="text" className="w-full rounded bg-blue-300 h-[50px] p-2" value={username} onChange={(e) => setUsername(e.target.value)} required />
+                        <label htmlFor="username" className="text-[#1A3A2A] font-thin">Username</label>
+                        <input id="username" type="text" className="text-white w-full rounded bg-[#5DC691] h-[50px] p-2" value={username} onChange={(e) => setUsername(e.target.value)} required />
                     </div>
                     <div className="flex flex-col gap-1">
-                        <label htmlFor="username" className="text-white font-bold">Password</label>
-                        <input id="username" type="password" className="w-full rounded bg-blue-300 h-[50px] p-2" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                        <label htmlFor="username" className="text-[#1A3A2A] font-thin">Password</label>
+                        <input id="username" type="password" className="text-white w-full rounded bg-[#5DC691] h-[50px] p-2" value={password} onChange={(e) => setPassword(e.target.value)} required />
                     </div>
-                    <input type="submit" value="LOGIN" className="w-[100px] h-[40px] bg-white rounded font-bold mx-auto mt-10 hover:cursor-pointer hover:bg-blue-400 hover:text-white transition-all" />
+                    <input type="submit" value="LOGIN" className="w-[100px] h-[40px] text-[#226242] bg-[#9bf3f0] rounded-lg font-bold mx-auto mt-10 hover:cursor-pointer hover:bg-[#226242] hover:text-white transition-all" />
                 </form>
             </div>
         </main>
